@@ -49,4 +49,11 @@ public class ProductWithDealRepo {
         pwd.updateQuantity(updatedQuantity);
     }
 
+    public void updatePrice(@NonNull String dealId, @NonNull String productId,
+                            @NonNull Double updatedPrice) {
+        ProductWithDeal pwd = getProductInDeal(dealId, productId);
+
+        pwd.updateDealPrice(updatedPrice);
+    }
+
 }

@@ -11,11 +11,11 @@ public class ProductWithDeal {
     private String dealId;
 
     private Integer quantity;
-    //private Double dealPrice;
+    private Double dealPrice;
 
-//    public void updateDealPrice(@NonNull Double newDealPrice) {
-//        this.dealPrice = newDealPrice;
-//    }
+    public void updateDealPrice(@NonNull Double newDealPrice) {
+        this.dealPrice = newDealPrice;
+    }
 
     public void updateQuantity(@NonNull Integer updatedQuantity) {
         this.quantity = updatedQuantity;

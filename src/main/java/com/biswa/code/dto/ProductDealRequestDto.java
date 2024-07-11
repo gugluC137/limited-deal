@@ -8,4 +8,5 @@ import lombok.Getter;
 public class ProductDealRequestDto {
     private String productId;
     private Integer quantity;
+    private Double dealPrice;
 }

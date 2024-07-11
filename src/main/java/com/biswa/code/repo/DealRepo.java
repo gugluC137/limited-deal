@@ -10,6 +10,7 @@ import java.util.Map;
 
 public class DealRepo {
     private final Map<String, Deal> persistedDeals;
+    private static final Integer DEFAULT_DEAL_PERIOD_IN_MIN = 120;
 
     public DealRepo() {
         this.persistedDeals = new HashMap<>();
@@ -29,5 +30,9 @@ public class DealRepo {
 
     public void updateEndDate(@NonNull String dealId, @NonNull Date endDate) {
         this.persistedDeals.get(dealId).updateEndDate(endDate);
+    }
+
+    public Integer getDefaultDealPeriodInMin() {
+        return DEFAULT_DEAL_PERIOD_IN_MIN;
     }
 }
